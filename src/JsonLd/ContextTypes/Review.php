@@ -10,13 +10,13 @@ class Review extends AbstractContext
      * @var array
      */
     protected $structure = [
-        'itemReviewed' => __NAMESPACE__ . '\Thing',
-        'reviewRating' => __NAMESPACE__ . '\Rating',
-        'aggregateRating' => __NAMESPACE__ . '\AggregateRating',
+        'itemReviewed' => '\JsonLd\ContextTypes\Thing',
+        'reviewRating' => '\JsonLd\ContextTypes\Rating',
+        'aggregateRating' => '\JsonLd\ContextTypes\AggregateRating',
         'name' => null,
-        'author' => __NAMESPACE__ . '\Person',
+        'author' => '\JsonLd\ContextTypes\Person',
         'reviewBody' => null,
-        'publisher' => __NAMESPACE__ . '\Organization',
+        'publisher' => '\JsonLd\ContextTypes\Organization',
         'datePublished' => null,
     ];
 }

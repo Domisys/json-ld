@@ -8,7 +8,7 @@ class Offer extends AbstractContext
      * @var array
      */
     protected $structure = [
-        'itemOffered' => __NAMESPACE__ . '\Product',
+        'itemOffered' => '\JsonLd\ContextTypes\Product',
         'price' => null,
         'priceCurrency' => null,
         'priceValidUntil' => null,
