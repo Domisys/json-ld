@@ -22,7 +22,7 @@ class BreadcrumbList extends AbstractContext
     protected function setItemListElementAttribute($items)
     {
         foreach($items as $pos=>$item) {
-            $items[$pos] = $this->getNestedContext(ListItem::class, [
+            $items[$pos] = $this->getNestedContext(__NAMESPACE__ . '\ListItem', [
                 'position' => $pos + 1,
                 'item' => $item
             ]);

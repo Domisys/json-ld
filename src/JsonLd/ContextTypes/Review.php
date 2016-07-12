@@ -10,13 +10,13 @@ class Review extends AbstractContext
      * @var array
      */
     protected $structure = [
-        'itemReviewed' => Thing::class,
-        'reviewRating' => Rating::class,
-        'aggregateRating' => AggregateRating::class,
+        'itemReviewed' => __NAMESPACE__ . '\Thing',
+        'reviewRating' => __NAMESPACE__ . '\Rating',
+        'aggregateRating' => __NAMESPACE__ . '\AggregateRating',
         'name' => null,
-        'author' => Person::class,
+        'author' => __NAMESPACE__ . '\Person',
         'reviewBody' => null,
-        'publisher' => Organization::class,
+        'publisher' => __NAMESPACE__ . '\Organization',
         'datePublished' => null,
     ];
 }

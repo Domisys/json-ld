@@ -8,7 +8,7 @@ class Offer extends AbstractContext
      * @var array
      */
     protected $structure = [
-        'itemOffered' => Product::class,
+        'itemOffered' => __NAMESPACE__ . '\Product',
         'price' => null,
         'priceCurrency' => null,
         'priceValidUntil' => null,
