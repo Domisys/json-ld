@@ -16,7 +16,7 @@ class Product extends AbstractContext
         'url' => null,
         'description' => null,
         'brand' => null,
-        'review' => '\JsonLd\ContextTypes\Review'),
+        'review' => '\JsonLd\ContextTypes\Review',
         'aggregateRating' => '\JsonLd\ContextTypes\AggregateRating',
         'offers' => '\JsonLd\ContextTypes\Offer',
         'gtin8' => null,
